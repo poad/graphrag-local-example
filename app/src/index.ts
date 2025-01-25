@@ -1,5 +1,5 @@
 import { ChatLlamaCpp } from '@langchain/community/chat_models/llama_cpp';
-import { HuggingFaceTransformersEmbeddings } from '@langchain/community/embeddings/hf_transformers';
+import { HuggingFaceTransformersEmbeddings } from '@langchain/community/embeddings/huggingface_transformers';
 import { createRetrievalChain } from 'langchain/chains/retrieval';
 import { createStuffDocumentsChain } from 'langchain/chains/combine_documents';
 import { createHistoryAwareRetriever } from 'langchain/chains/history_aware_retriever';
@@ -34,7 +34,7 @@ const GraphAnnotation = Annotation.Root({
 
 export async function run() {
   const embeddings = new HuggingFaceTransformersEmbeddings({
-    modelName: 'nomic-ai/nomic-embed-text-v1.5',
+    model: 'nomic-ai/nomic-embed-text-v1.5',
   });
 
   const embeddingsType = process.env.EMBEDDINGS_TYPE;
