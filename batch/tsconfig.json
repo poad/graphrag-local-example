@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "moduleDetection": "force",
     "outDir": "./dist",
-    "rootDir": "./src",
     "resolveJsonModule": true,
     "allowJs": true,
     "esModuleInterop": true,
@@ -35,7 +34,7 @@
   },
   "exclude": [
     "node_modules",
-    "eslint.config.mjs",
+    "eslint.config.js",
     "vite.config.ts"
   ]
 }

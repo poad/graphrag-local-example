@@ -2,6 +2,7 @@
   "name": "@graphrag-local-example/batch",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
